@@ -136,52 +136,50 @@ nav a:hover {
 
 
 /* ================= HUGE BACKGROUND TEXT ================= */
-
 .hero-background {
     position: absolute;
 
-    top: 40px;
+    top: 25px;
     left: 0;
 
     width: 100%;
 
     text-align: center;
 
-    font-size: clamp(100px, 20vw, 300px);
+    font-size: clamp(120px, 20vw, 300px);
 
     font-weight: 900;
 
     line-height: 0.8;
 
-    color: #a9000a;
-
-    opacity: 0.45;
-
-    letter-spacing: -10px;
+    letter-spacing: -12px;
 
     white-space: nowrap;
+
+    color: #a9000a;
+
+    opacity: 0.35;
 
     z-index: 0;
 
     pointer-events: none;
 }
 
-
 /* ================= HERO CONTENT ================= */
 
 .hero-content {
     position: relative;
+    z-index: 2;
 
-    z-index: 1;
-
-    min-height: 650px;
+    min-height: 700px;
 
     display: grid;
 
-    grid-template-columns: 1fr 1.3fr 0.5fr;
+    grid-template-columns: 0.9fr 1.4fr 0.5fr;
 
     align-items: center;
 }
+
 
 
 /* ================= HERO INTRO ================= */
@@ -236,31 +234,34 @@ nav a:hover {
 /* ================= HERO IMAGE ================= */
 
 .hero-image {
-    height: 650px;
+    height: 700px;
 
     display: flex;
-
+    justify-content: center;
     align-items: flex-end;
 
-    justify-content: center;
-
     position: relative;
-
     z-index: 3;
+
+    transform: translateX(-20px);
 }
 
-.hero-image img {
-    max-height: 100%;
 
-    max-width: 100%;
+.hero-image img {
+    height: 700px;
+    width: auto;
+
+    max-width: none;
 
     object-fit: contain;
 
-    filter: grayscale(100%);
-
     display: block;
-}
 
+    filter:
+        grayscale(100%)
+        contrast(115%)
+        brightness(85%);
+}
 
 /* ================= HERO STATS ================= */
 
